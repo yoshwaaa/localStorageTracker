@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <script>
+    daralytics('IP Address Feature Under Revision');
+    var superString = localStorage.getItem('userMetrics') + '\n' + localStorage.getItem('userAdwords') + '\nNumber of Total Sessions: ' + localStorage.getItem('userSession') + '\n' + localStorage.getItem('userPage');
+    if (document.getElementById('daralytics') != null) {
+        document.getElementById('daralytics').value = superString;
+    }
+  </script>
+  <input type="hidden" name="daralytics" id="daralytics" value=""/>
+</body>
+</html>
